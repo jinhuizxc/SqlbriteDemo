@@ -14,7 +14,10 @@ import java.util.Date;
  * SqlBriteDemo
  *
  * com.squareup.sqlbrite.BriteDatabase 的学习！项目需要
- * 参考链接：http://blog.csdn.net/niubitianping/article/details/62216503
+ *
+ * 参考链接：
+ * http://blog.csdn.net/niubitianping/article/details/62051286
+ * http://blog.csdn.net/niubitianping/article/details/62216503
  */
 public class MainActivity extends AppCompatActivity {
 
