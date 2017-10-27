@@ -1,8 +1,9 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.squareup.sqldelight'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.example.jh.sqlbritedemo"
         minSdkVersion 19
@@ -27,4 +28,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
+    // 加载数据库
+//    compile 'com.squareup.sqlbrite2:sqlbrite:2.0.0'
+    // 测试
+    compile 'com.squareup.sqlbrite:sqlbrite:0.7.0'
 }
