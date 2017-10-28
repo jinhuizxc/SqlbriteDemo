@@ -43,6 +43,4 @@ dependencies {
     annotationProcessor 'com.ryanharter.auto.value:auto-value-parcel:0.2.5'
 // 需要自定义TypeAdapter就要导入
     compile 'com.ryanharter.auto.value:auto-value-parcel-adapter:0.2.5'
-    // 需要自定义TypeAdapter就要导入
-    compile 'com.ryanharter.auto.value:auto-value-parcel-adapter:0.2.5'
 }
