@@ -1,6 +1,7 @@
 package com.example.jh.sqlbritedemo.bean;
 
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 
 
 import com.example.jh.sqlbritedemo.UserModel;
@@ -14,6 +15,7 @@ import com.squareup.sqldelight.RowMapper;
 
 @AutoValue
 public abstract class User implements UserModel {
+
 
     public static final Factory<User> FACTORY = new Factory<>(new Creator<User>() {
         @Override

@@ -69,11 +69,11 @@ public class MainActivity extends AppCompatActivity {
 
     public List<User> getAllUsers(SQLiteDatabase db) {
         List<User> result = new ArrayList<>();
-//创建 SqlDelightStatement对象，里面有查询字符串和参数
-        SqlDelightStatement query = User.FACTORY.select_by_name("天平");
+        // 创建 SqlDelightStatement对象，里面有查询字符串和参数
+        SqlDelightStatement query = User.FACTORY.select_by_name("天");
 
         //try_with_resources写法，括号里面的资源需要继承AutoCloseable，作用是可以自动关闭对象
-        try (Cursor cursor = db.rawQuery(User.FACTORY.select_by_name("天平").statement, query.args)) {
+        try (Cursor cursor = db.rawQuery(query.statement, query.args)) {
 
             while (cursor.moveToNext()) {
                 result.add(User.SELECT_ALL_MAPPER.map(cursor));
